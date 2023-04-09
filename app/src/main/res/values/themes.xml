@@ -12,5 +12,13 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        <item name="actionBarStyle">@style/Theme.PawPartner.AppBarOverlay</item>
+        <item name="android:popupMenuStyle">@style/popupBGStyle</item>
     </style>
+    <style name="Theme.PawPartner.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="Theme.PawPartner.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+    <style name="popupBGStyle" parent="Widget.MaterialComponents.PopupMenu">
+        <item name="android:popupBackground">@drawable/menu_background</item>
+    </style>
+
 </resources>
